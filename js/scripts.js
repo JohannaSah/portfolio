@@ -1,5 +1,4 @@
 
-
 // Changing languages by clicking button
 function showLanguage(language) {
     // Get all the language choices

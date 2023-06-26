@@ -212,19 +212,13 @@ p {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Cinzel';
     text-align: center;
-    font-size: 300%;
 }
 
 /* Section styles general */
 section {
     margin-bottom: 7%;
     padding-top: 8%;
-}
-
-.section-content::after {
-    content: "";
-    display: table;
-    clear: both;
+    scroll-margin-top: 70px;
 }
 
 /* Language styles */
@@ -368,7 +362,7 @@ section {
 }
 
 /* SVG styles */
-.container {    
+.svg-container {    
     display: flex;
     align-items: center;
     justify-content: center;
