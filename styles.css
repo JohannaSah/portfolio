@@ -116,7 +116,7 @@ nav .dropdown:hover .dropdown-content {
     display: none;
 }
   
-@media screen and (max-width: 751px) {
+@media screen and (max-width: 750px) {
     .nav-dropdown {
         position: relative;
         display: inline-block;
@@ -127,7 +127,7 @@ nav .dropdown:hover .dropdown-content {
     }
 }
 
-@media screen and (min-width: 752px) {
+@media screen and (min-width: 751px) {
     .nav-dropdown {
         display: none !important;
     }
@@ -186,6 +186,15 @@ nav .dropdown:hover .dropdown-content {
     padding-bottom: 3%;
 }
 
+@media screen and (max-width: 750px) {
+    .main {
+        padding-top: 5%;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-bottom: 3%;
+    }
+}
+
 p {
     text-align: center;
     font-size: medium;
@@ -203,6 +212,7 @@ p {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Cinzel';
     text-align: center;
+    font-size: 300%;
 }
 
 /* Section styles general */
@@ -229,24 +239,48 @@ section {
 /* Home section styles */
 #home .section-content {
     padding-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #home .portrait {
-    float: left;
-    margin-right: 40px;
-    width: 250px;
+    width: 100%; 
+    max-width: 250px; 
     height: auto;
     border-radius: 50%;
     margin-bottom: 10px;
 }
 
-#home .section-right {
+#home .section-left {
+    float: left;
+    width: calc(50% - 10px); /* Adjusted width calculation to accommodate for margin */
     text-align: center;
 }
 
-#home h1 {
-    font-size: 400%;
+#home .section-right {
+    float: right;
+    width: calc(50% - 10px); /* Adjusted width calculation to accommodate for margin */
     text-align: center;
+    margin-left: 20px; /* Add margin-left to create a minimum distance */
+}
+
+#home h1 {
+    font-size: 300%;
+}
+
+@media screen and (max-width: 751px) {
+    #home .section-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #home .section-left,
+    #home .section-right {
+        flex-basis: 100%;
+        float: auto;
+    }
 }
 
 /* Skills & Experience section styles */
@@ -305,6 +339,10 @@ section {
     object-fit: contain;
 }
 
+#projects h2 {
+    font-size: larger;
+}
+
 /* Contact section styles */
 #contact h1 {
     font-size: 300%;
@@ -320,6 +358,13 @@ section {
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+
+@media screen and (max-width: 751px) {
+    #contact .section-content {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 /* SVG styles */
@@ -339,24 +384,16 @@ section {
     min-height: auto;
     max-width: 700px;
     max-height: auto;
-    margin-left: 10%;
-}
-  
-.hamburg_skyline_svg {
     animation-duration: 30s;
     animation-name: hamburg_skyline-fade-in;
     animation-iteration-count: 1;
     animation-timing-function: linear;
 }
 
-#hamburg_skyline_svg_about {
-    margin-left: 5%;
-}
-
 @keyframes hamburg_skyline-fade-in {
     0% { opacity: 0; }
-    50% { opacity: 0.35; }
-    100% { opacity: 0.75; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
 }
 
 /* Footer styles */
@@ -366,6 +403,10 @@ section {
     text-align: center;
     padding: 20px;
     border-top: 1px solid #000;
+}
+
+.footer h2 {
+    font-size: medium;
 }
 
 .icon-image {
