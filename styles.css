@@ -289,17 +289,8 @@ section {
 }
 
 #skills th, td {
-    border: 1px solid black;
     padding: 8px;
-    text-align: left;
-}
-
-#skills thead th {
-    background-color: #f2f2f2;
-}
-
-#skills tbody tr:nth-child(even) {
-    background-color: #f2f2f2;
+    text-align: center;
 }
 
 /* Projects section styles */
