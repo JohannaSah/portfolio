@@ -16,7 +16,7 @@ function showLanguage(language) {
         choice.classList.add('active');
       });
     }
-}
+};
 
 // Show/hide hidden elements in About me and Projects
 const seenElements = document.querySelectorAll('.seen');
@@ -24,6 +24,12 @@ const seenElements = document.querySelectorAll('.seen');
 seenElements.forEach((element) => {
   element.addEventListener('click', () => {
     element.nextElementSibling.classList.toggle('show');
+
+    
+    const hiddenElement = element.nextElementSibling;
+    if (hiddenElement.classList.contains('show')) {
+        hiddenElement.scrollIntoView({ behavior: 'smooth' });
+      }
   });
 });
 
@@ -34,4 +40,4 @@ document.addEventListener('click', (event) => {
         hiddenElement.classList.remove('show');
       }
     });
-  });
+});

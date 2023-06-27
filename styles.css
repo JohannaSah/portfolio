@@ -325,12 +325,6 @@ section {
     font-size: 300%;
 }
 
-#projects .grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    grid-gap: 10px;
-}
-
 #projects .project {
     padding: 20px;
     text-align: center;
@@ -338,36 +332,50 @@ section {
     margin-bottom: 30px;
 }
 
-#projects img {
-    width: auto;
-    max-width: 100%;
-    object-fit: contain;
-    border-radius: 3%;
-}
-
 #projects h2 {
     font-size: 200%;
+}
+
+#projects img {
+    max-width: 100%;
 }
 
 #projects .hidden {
     display: none;
     background-color: #fff;
-    text-align: left;
+    text-align: center;
     margin-left: 20px;
 }
 
 #projects .seen {
     cursor: pointer;
     min-width: 50%;
+    display: flex;
+    align-items: center;
 }
 
 #projects .show {
     display: block;
+    scroll-margin-top: 250px;
 }
 
 #projects .project-content {
     display: flex;
+    flex-direction: column;
     align-items: center;
+}
+
+@media screen and (min-width: 751px) {
+    #projects .project-content {
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+    }
+    
+    #projects .hidden {
+      margin-left: 10px;
+      text-align: left;
+    }
 }
 
 /* Contact section styles */
