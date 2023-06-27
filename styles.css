@@ -233,45 +233,50 @@ section {
     padding-top: 5%;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
 }
 
-#home .portrait {
-    width: 100%; 
+#home .portrait { 
     max-width: 250px; 
     height: auto;
     border-radius: 50%;
     margin-bottom: 10px;
+    margin-top: 100px;
 }
 
 #home .section-left {
-    float: left;
-    width: calc(50% - 10px); /* Adjusted width calculation to accommodate for margin */
+    width: 100%; 
     text-align: center;
 }
-
+  
 #home .section-right {
-    float: right;
-    width: calc(50% - 10px); /* Adjusted width calculation to accommodate for margin */
+    width: 100%;
     text-align: center;
-    margin-left: 20px; /* Add margin-left to create a minimum distance */
 }
-
+  
 #home h1 {
     font-size: 300%;
 }
-
-@media screen and (max-width: 751px) {
+  
+@media screen and (min-width: 752px) {
+    /* Styles for screens larger than 751px */
     #home .section-content {
-        flex-direction: column;
-        align-items: center;
+      align-items: center;
+    }
+  
+    #home .section-left {
+      float: left;
+      width: calc(50% - 10px);
+    }
+  
+    #home .section-right {
+      float: right;
+      width: calc(50% - 10px);
     }
 
-    #home .section-left,
-    #home .section-right {
-        flex-basis: 100%;
-        float: auto;
+    #home .portrait { 
+        margin-top: 0px;
     }
 }
 
