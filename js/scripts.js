@@ -18,11 +18,20 @@ function showLanguage(language) {
     }
 }
 
-// Show hidden Paragraphs in About me
-const seenParagraphs = document.querySelectorAll('#skills .seen');
+// Show/hide hidden elements in About me and Projects
+const seenElements = document.querySelectorAll('.seen');
 
-seenParagraphs.forEach((paragraph) => {
-  paragraph.addEventListener('click', () => {
-    paragraph.nextElementSibling.classList.toggle('show');
+seenElements.forEach((element) => {
+  element.addEventListener('click', () => {
+    element.nextElementSibling.classList.toggle('show');
   });
 });
+
+document.addEventListener('click', (event) => {
+    seenElements.forEach((element) => {
+      const hiddenElement = element.nextElementSibling;
+      if (!element.contains(event.target) && !hiddenElement.contains(event.target)) {
+        hiddenElement.classList.remove('show');
+      }
+    });
+  });
