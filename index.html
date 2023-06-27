@@ -23,7 +23,7 @@
 <body>
     <!-- Navbar -->
     <nav>
-        <a href="#home">
+        <a href="#home" id="logo-link">
             <img src="img/icons/JS-wide.png" alt="clickable logo, that brings you back to home" id="logo" >
         </a>
         <div id="navbar">
@@ -468,51 +468,60 @@
             <div class="section-content language-choice eng active">
                 <h1> Projects </h1>
                 <div class="grid-container">
-                    <div class="project" onclick="expandProject(this)">
+                    <div class="project">
                         <h2>Chat App</h2>
                         <p>
                           React Native, Gifted Chat, Expo
                         </p>
                         <div class="project-image">
-                          <img src="img/projects/project-8.jpg" alt="Image of Chatapp home and chat screen">
+                          <a href="https://github.com/JohannaSah/chat-app">
+                            <img src="img/projects/project-8.jpg" alt="Image of Chatapp home and chat screen">
+                          </a>
                         </div>
                         <p>
                           Chat App is an application for both Android /iOS created with Reactive Native and Expo. The app provides users with a chat interface and options to take pictures, and share images and their location. Additionally, users can choose a theme color on the start screen before entering the chat.
                           This app has Google Cloud Firestore as a non-relational database where images and messages are being stored. This last feature allows users to read chat messages even when the app is offline.
                         </p>
                         <p>
-                          There is no live version of this but check out the video if you like.
+                          There is no live version of this site but check out the 
                           <br>
-                          <a href="https://www.youtube.com/watch?v=b3NK5q8lfnc" target="_blank">Watch the video</a>  
-                          and feel free to check out the code on 
+                          <a href="https://www.youtube.com/watch?v=b3NK5q8lfnc" target="_blank">video</a>  
+                          if you like <br> and feel free to check out the code on 
                           <a href="https://github.com/JohannaSah/chat-app" target="_blank"> github </a>.
                         </p>
                     </div>
-                    <div class="project" onclick="expandProject(this)">
+                    <div class="project">
                         <h2>Meet App - PWA</h2>
                         <p>
                           React, Google Calendar API, Google Auth
                         </p>
                         <div class="project-image">
-                          <img src="img/projects/project-6.jpg" alt="Image of the PWA MeetApp">
+                          <a href="https://github.com/JohannaSah/meet-app">
+                            <img src="img/projects/project-6.jpg" alt="Image of the PWA MeetApp">
+                          </a>
                         </div>
                           <p>
                             This is a React application that allows users to view and schedule events from a Google Calendar. It utilizes the Google Calendar API to retrieve data and presents it in a card format. This API is protected and requires authorization access. Users can click on a card to access more details about an event and can also search for a specific event by name or number. MeetApp is built using a test-driven development technique (TDD) It's designed as a serverless, progressive web app (PWA). 
                           </p>
                           <p>
-                            The PWA has not been published yet but is in the testing stage. Therefore I added a video of it's functionalities.
-                            <br> <br>
-                            <a href="https://www.youtube.com/watch?v=qFSpNt8ZuzM" target="_blank">Watch the video</a>  and feel free to check out the code on 
+                            The PWA has not been published yet but is in the testing stage. 
+
+                            <br>
+                            
+                            Here is a
+                            <a href="https://www.youtube.com/watch?v=qFSpNt8ZuzM" target="_blank">video</a>  of it's functionalities and feel free to check out the code on 
                             <a href="https://github.com/JohannaSah/meet-app" target="_blank"> github </a>.
                           </p>
                     </div>
-                    <div class="project" onclick="expandProject(this)">
+                    <div class="project">
                         <h2>MyFlix - Api</h2>
                         <p>
                           JavaScript, MongoDB, Express, React, Node.Js, Render
                         </p>
                         <div class="project-image">
-                          <img src="img/projects/project-4.jpg" alt="Image of the movie database on MongoDB">
+                          <a href="https://github.com/JohannaSah/MovieApi">
+                            <img src="img/projects/project-4.jpg" alt="Image of the movie database on MongoDB">
+                          </a>
                         </div>
                         <p>
                           This is a REST API that allows users to access information about movies, directors, and genres. Users can also create an account, update their information, and add movies to their list of favorites. It utilizes the MERN stack (MongoDB, Express, React, Node.js) and is deployed to Render.                      
@@ -522,13 +531,15 @@
                           <a href="https://github.com/JohannaSah/MovieApi" target="_blank"> github </a>.
                         </p>
                     </div>
-                    <div class="project" onclick="expandProject(this)">
+                    <div class="project">
                         <h2>MyFlix - React</h2>
                         <div class="project-image">
                           <p>
                             Html, CSS, JavaScript, React, Bootstrap, Parcel
                           </p>
-                          <img src="img/projects/project-5.jpg" alt="Image of the React version of the MyFlix homepage">
+                          <a href="https://myflixjs.netlify.app/">
+                            <img src="img/projects/project-5.jpg" alt="Image of the React version of the MyFlix homepage">
+                          </a>
                         </div>
                         <p>
                           Myflix is a single page application built with React that allows users to register an account, log in, and browse a collection of movies. Users can also view information about a movie, including its director and genre, and add movies to their list of favorites. This project was built using React, React Redux, and React Bootstrap. It uses Parcel as its built tool and it is hosted on Netflify.
@@ -539,13 +550,15 @@
                           <a href="https://github.com/JohannaSah/myFlix-client" target="_blank"> github </a>.
                         </p>
                     </div>
-                    <div class="project" onclick="expandProject(this)">
+                    <div class="project">
                         <h2>MyFlix - Angular</h2>
                         <p>
                           Html, CSS, JavaScript, Angluar, Node.js
                         </p>
                         <div class="project-image">
-                          <img src="img/projects/project-9.jpg" alt="Image of the Angular version of the MyFlix homepage">
+                          <a href="https://johannasah.github.io/myFlix-Angular-client/welcome">
+                            <img src="img/projects/project-9.jpg" alt="Image of the Angular version of the MyFlix homepage">
+                          </a>
                         </div>
                         <p>
                           The client side of a movie browsing app that allows users to register, log in and browse through movies. The users can also add movies to their list of favourites and view or update their profile details. Built with Angular and designed with Angular Material.
@@ -556,13 +569,15 @@
                           <a href="https://github.com/JohannaSah/myFlix-Angular-client" target="_blank"> github </a>.
                         </p>
                     </div>                    
-                    <div class="project" onclick="expandProject(this)">
+                    <div class="project">
                         <h2>Pokedex</h2>
                         <p>
                           HTML, CSS, JavaScript, external API
                         </p>
                         <div class="project-image">
-                          <img src="img/projects/project-3.jpg" alt="Image of the Pokedex page">
+                          <a href="https://johannasah.github.io/simple-JS-app/">
+                            <img src="img/projects/project-3.jpg" alt="Image of the Pokedex page">
+                          </a>
                         </div>
                         <p>
                           This web application loads data from an external API and enables the viewing of Pokémon details by clicking the corresponding button. Built with HTML, CSS and JavaScript.
@@ -573,13 +588,15 @@
                           <a href="https://github.com/JohannaSah/simple-JS-app" target="_blank"> github </a>.
                         </p>
                     </div>
-                    <div class="project" onclick="expandProject(this)">
+                    <div class="project">
                         <h2>To-do List</h2>
                         <p>
                           HTML, CSS, jQuery
                         </p>
                         <div class="project-image">
-                          <img src="img/projects/project-2.jpg" alt="Image of the To-do list app">
+                          <a href="https://johannasah.github.io/to-do-list-app/">
+                            <img src="img/projects/project-2.jpg" alt="Image of the To-do list app">
+                          </a>
                         </div>
                         <p>
                           This app allows the user to create a to-do list. Items can be added, crossed out, rearranged and deleted. Built using HTML, CSS and jQuery.
@@ -596,51 +613,60 @@
             <div class="section-content language-choice ger">
                 <h1> Projekte </h1>
                 <div class="grid-container">
-                    <div class="project" onclick="expandProject(this)">
+                    <div class="project">
                         <h2>Chat App</h2>
                         <p>
                           React Native, Gifted Chat, Expo
                         </p>
                         <div class="project-image">
-                          <img src="img/projects/project-8.jpg" alt="Image of Chatapp home and chat screen">
+                          <a href="https://github.com/JohannaSah/chat-app">
+                            <img src="img/projects/project-8.jpg" alt="Image of Chatapp home and chat screen">
+                          </a>
                         </div>
                         <p>
                           Chat App is an application for both Android /iOS created with Reactive Native and Expo. The app provides users with a chat interface and options to take pictures, and share images and their location. Additionally, users can choose a theme color on the start screen before entering the chat.
                           This app has Google Cloud Firestore as a non-relational database where images and messages are being stored. This last feature allows users to read chat messages even when the app is offline.
                         </p>
                         <p>
-                          There is no live version of this but check out the video if you like.
+                          There is no live version of this site but check out the 
                           <br>
-                          <a href="https://www.youtube.com/watch?v=b3NK5q8lfnc" target="_blank">Watch the video</a>  
-                          and feel free to check out the code on 
+                          <a href="https://www.youtube.com/watch?v=b3NK5q8lfnc" target="_blank">video</a>  
+                          if you like <br> and feel free to check out the code on 
                           <a href="https://github.com/JohannaSah/chat-app" target="_blank"> github </a>.
                         </p>
                     </div>
-                    <div class="project" onclick="expandProject(this)">
+                    <div class="project">
                         <h2>Meet App - PWA</h2>
                         <p>
                           React, Google Calendar API, Google Auth
                         </p>
                         <div class="project-image">
-                          <img src="img/projects/project-6.jpg" alt="Image of the PWA MeetApp">
+                          <a href="https://github.com/JohannaSah/meet-app">
+                            <img src="img/projects/project-6.jpg" alt="Image of the PWA MeetApp">
+                          </a>
                         </div>
                           <p>
                             This is a React application that allows users to view and schedule events from a Google Calendar. It utilizes the Google Calendar API to retrieve data and presents it in a card format. This API is protected and requires authorization access. Users can click on a card to access more details about an event and can also search for a specific event by name or number. MeetApp is built using a test-driven development technique (TDD) It's designed as a serverless, progressive web app (PWA). 
                           </p>
                           <p>
-                            The PWA has not been published yet but is in the testing stage. Therefore I added a video of it's functionalities.
-                            <br> <br>
-                            <a href="https://www.youtube.com/watch?v=qFSpNt8ZuzM" target="_blank">Watch the video</a>  and feel free to check out the code on 
+                            The PWA has not been published yet but is in the testing stage. 
+
+                            <br>
+                            
+                            Here is a
+                            <a href="https://www.youtube.com/watch?v=qFSpNt8ZuzM" target="_blank">video</a>  of it's functionalities and feel free to check out the code on 
                             <a href="https://github.com/JohannaSah/meet-app" target="_blank"> github </a>.
                           </p>
                     </div>
-                    <div class="project" onclick="expandProject(this)">
+                    <div class="project">
                         <h2>MyFlix - Api</h2>
                         <p>
                           JavaScript, MongoDB, Express, React, Node.Js, Render
                         </p>
                         <div class="project-image">
-                          <img src="img/projects/project-4.jpg" alt="Image of the movie database on MongoDB">
+                          <a href="https://github.com/JohannaSah/MovieApi">
+                            <img src="img/projects/project-4.jpg" alt="Image of the movie database on MongoDB">
+                          </a>
                         </div>
                         <p>
                           This is a REST API that allows users to access information about movies, directors, and genres. Users can also create an account, update their information, and add movies to their list of favorites. It utilizes the MERN stack (MongoDB, Express, React, Node.js) and is deployed to Render.                      
@@ -650,13 +676,15 @@
                           <a href="https://github.com/JohannaSah/MovieApi" target="_blank"> github </a>.
                         </p>
                     </div>
-                    <div class="project" onclick="expandProject(this)">
+                    <div class="project">
                         <h2>MyFlix - React</h2>
                         <div class="project-image">
                           <p>
                             Html, CSS, JavaScript, React, Bootstrap, Parcel
                           </p>
-                          <img src="img/projects/project-5.jpg" alt="Image of the React version of the MyFlix homepage">
+                          <a href="https://myflixjs.netlify.app/">
+                            <img src="img/projects/project-5.jpg" alt="Image of the React version of the MyFlix homepage">
+                          </a>
                         </div>
                         <p>
                           Myflix is a single page application built with React that allows users to register an account, log in, and browse a collection of movies. Users can also view information about a movie, including its director and genre, and add movies to their list of favorites. This project was built using React, React Redux, and React Bootstrap. It uses Parcel as its built tool and it is hosted on Netflify.
@@ -667,13 +695,15 @@
                           <a href="https://github.com/JohannaSah/myFlix-client" target="_blank"> github </a>.
                         </p>
                     </div>
-                    <div class="project" onclick="expandProject(this)">
+                    <div class="project">
                         <h2>MyFlix - Angular</h2>
                         <p>
                           Html, CSS, JavaScript, Angluar, Node.js
                         </p>
                         <div class="project-image">
-                          <img src="img/projects/project-9.jpg" alt="Image of the Angular version of the MyFlix homepage">
+                          <a href="https://johannasah.github.io/myFlix-Angular-client/welcome">
+                            <img src="img/projects/project-9.jpg" alt="Image of the Angular version of the MyFlix homepage">
+                          </a>
                         </div>
                         <p>
                           The client side of a movie browsing app that allows users to register, log in and browse through movies. The users can also add movies to their list of favourites and view or update their profile details. Built with Angular and designed with Angular Material.
@@ -684,13 +714,15 @@
                           <a href="https://github.com/JohannaSah/myFlix-Angular-client" target="_blank"> github </a>.
                         </p>
                     </div>                    
-                    <div class="project" onclick="expandProject(this)">
+                    <div class="project">
                         <h2>Pokedex</h2>
                         <p>
                           HTML, CSS, JavaScript, external API
                         </p>
                         <div class="project-image">
-                          <img src="img/projects/project-3.jpg" alt="Image of the Pokedex page">
+                          <a href="https://johannasah.github.io/simple-JS-app/">
+                            <img src="img/projects/project-3.jpg" alt="Image of the Pokedex page">
+                          </a>
                         </div>
                         <p>
                           This web application loads data from an external API and enables the viewing of Pokémon details by clicking the corresponding button. Built with HTML, CSS and JavaScript.
@@ -701,13 +733,15 @@
                           <a href="https://github.com/JohannaSah/simple-JS-app" target="_blank"> github </a>.
                         </p>
                     </div>
-                    <div class="project" onclick="expandProject(this)">
+                    <div class="project">
                         <h2>To-do List</h2>
                         <p>
                           HTML, CSS, jQuery
                         </p>
                         <div class="project-image">
-                          <img src="img/projects/project-2.jpg" alt="Image of the To-do list app">
+                          <a href="https://johannasah.github.io/to-do-list-app/">
+                            <img src="img/projects/project-2.jpg" alt="Image of the To-do list app">
+                          </a>
                         </div>
                         <p>
                           This app allows the user to create a to-do list. Items can be added, crossed out, rearranged and deleted. Built using HTML, CSS and jQuery.
@@ -724,51 +758,60 @@
             <div class="section-content language-choice swe">
                 <h1> Projekt </h1>
                 <div class="grid-container">
-                    <div class="project" onclick="expandProject(this)">
+                    <div class="project">
                         <h2>Chat App</h2>
                         <p>
                           React Native, Gifted Chat, Expo
                         </p>
                         <div class="project-image">
-                          <img src="img/projects/project-8.jpg" alt="Image of Chatapp home and chat screen">
+                          <a href="https://github.com/JohannaSah/chat-app">
+                            <img src="img/projects/project-8.jpg" alt="Image of Chatapp home and chat screen">
+                          </a>
                         </div>
                         <p>
                           Chat App is an application for both Android /iOS created with Reactive Native and Expo. The app provides users with a chat interface and options to take pictures, and share images and their location. Additionally, users can choose a theme color on the start screen before entering the chat.
                           This app has Google Cloud Firestore as a non-relational database where images and messages are being stored. This last feature allows users to read chat messages even when the app is offline.
                         </p>
                         <p>
-                          There is no live version of this but check out the video if you like.
+                          There is no live version of this site but check out the 
                           <br>
-                          <a href="https://www.youtube.com/watch?v=b3NK5q8lfnc" target="_blank">Watch the video</a>  
-                          and feel free to check out the code on 
+                          <a href="https://www.youtube.com/watch?v=b3NK5q8lfnc" target="_blank">video</a>  
+                          if you like <br> and feel free to check out the code on 
                           <a href="https://github.com/JohannaSah/chat-app" target="_blank"> github </a>.
                         </p>
                     </div>
-                    <div class="project" onclick="expandProject(this)">
+                    <div class="project">
                         <h2>Meet App - PWA</h2>
                         <p>
                           React, Google Calendar API, Google Auth
                         </p>
                         <div class="project-image">
-                          <img src="img/projects/project-6.jpg" alt="Image of the PWA MeetApp">
+                          <a href="https://github.com/JohannaSah/meet-app">
+                            <img src="img/projects/project-6.jpg" alt="Image of the PWA MeetApp">
+                          </a>
                         </div>
                           <p>
                             This is a React application that allows users to view and schedule events from a Google Calendar. It utilizes the Google Calendar API to retrieve data and presents it in a card format. This API is protected and requires authorization access. Users can click on a card to access more details about an event and can also search for a specific event by name or number. MeetApp is built using a test-driven development technique (TDD) It's designed as a serverless, progressive web app (PWA). 
                           </p>
                           <p>
-                            The PWA has not been published yet but is in the testing stage. Therefore I added a video of it's functionalities.
-                            <br> <br>
-                            <a href="https://www.youtube.com/watch?v=qFSpNt8ZuzM" target="_blank">Watch the video</a>  and feel free to check out the code on 
+                            The PWA has not been published yet but is in the testing stage. 
+
+                            <br>
+                            
+                            Here is a
+                            <a href="https://www.youtube.com/watch?v=qFSpNt8ZuzM" target="_blank">video</a>  of it's functionalities and feel free to check out the code on 
                             <a href="https://github.com/JohannaSah/meet-app" target="_blank"> github </a>.
                           </p>
                     </div>
-                    <div class="project" onclick="expandProject(this)">
+                    <div class="project">
                         <h2>MyFlix - Api</h2>
                         <p>
                           JavaScript, MongoDB, Express, React, Node.Js, Render
                         </p>
                         <div class="project-image">
-                          <img src="img/projects/project-4.jpg" alt="Image of the movie database on MongoDB">
+                          <a href="https://github.com/JohannaSah/MovieApi">
+                            <img src="img/projects/project-4.jpg" alt="Image of the movie database on MongoDB">
+                          </a>
                         </div>
                         <p>
                           This is a REST API that allows users to access information about movies, directors, and genres. Users can also create an account, update their information, and add movies to their list of favorites. It utilizes the MERN stack (MongoDB, Express, React, Node.js) and is deployed to Render.                      
@@ -778,13 +821,15 @@
                           <a href="https://github.com/JohannaSah/MovieApi" target="_blank"> github </a>.
                         </p>
                     </div>
-                    <div class="project" onclick="expandProject(this)">
+                    <div class="project">
                         <h2>MyFlix - React</h2>
                         <div class="project-image">
                           <p>
                             Html, CSS, JavaScript, React, Bootstrap, Parcel
                           </p>
-                          <img src="img/projects/project-5.jpg" alt="Image of the React version of the MyFlix homepage">
+                          <a href="https://myflixjs.netlify.app/">
+                            <img src="img/projects/project-5.jpg" alt="Image of the React version of the MyFlix homepage">
+                          </a>
                         </div>
                         <p>
                           Myflix is a single page application built with React that allows users to register an account, log in, and browse a collection of movies. Users can also view information about a movie, including its director and genre, and add movies to their list of favorites. This project was built using React, React Redux, and React Bootstrap. It uses Parcel as its built tool and it is hosted on Netflify.
@@ -795,13 +840,15 @@
                           <a href="https://github.com/JohannaSah/myFlix-client" target="_blank"> github </a>.
                         </p>
                     </div>
-                    <div class="project" onclick="expandProject(this)">
+                    <div class="project">
                         <h2>MyFlix - Angular</h2>
                         <p>
                           Html, CSS, JavaScript, Angluar, Node.js
                         </p>
                         <div class="project-image">
-                          <img src="img/projects/project-9.jpg" alt="Image of the Angular version of the MyFlix homepage">
+                          <a href="https://johannasah.github.io/myFlix-Angular-client/welcome">
+                            <img src="img/projects/project-9.jpg" alt="Image of the Angular version of the MyFlix homepage">
+                          </a>
                         </div>
                         <p>
                           The client side of a movie browsing app that allows users to register, log in and browse through movies. The users can also add movies to their list of favourites and view or update their profile details. Built with Angular and designed with Angular Material.
@@ -812,13 +859,15 @@
                           <a href="https://github.com/JohannaSah/myFlix-Angular-client" target="_blank"> github </a>.
                         </p>
                     </div>                    
-                    <div class="project" onclick="expandProject(this)">
+                    <div class="project">
                         <h2>Pokedex</h2>
                         <p>
                           HTML, CSS, JavaScript, external API
                         </p>
                         <div class="project-image">
-                          <img src="img/projects/project-3.jpg" alt="Image of the Pokedex page">
+                          <a href="https://johannasah.github.io/simple-JS-app/">
+                            <img src="img/projects/project-3.jpg" alt="Image of the Pokedex page">
+                          </a>
                         </div>
                         <p>
                           This web application loads data from an external API and enables the viewing of Pokémon details by clicking the corresponding button. Built with HTML, CSS and JavaScript.
@@ -829,13 +878,15 @@
                           <a href="https://github.com/JohannaSah/simple-JS-app" target="_blank"> github </a>.
                         </p>
                     </div>
-                    <div class="project" onclick="expandProject(this)">
+                    <div class="project">
                         <h2>To-do List</h2>
                         <p>
                           HTML, CSS, jQuery
                         </p>
                         <div class="project-image">
-                          <img src="img/projects/project-2.jpg" alt="Image of the To-do list app">
+                          <a href="https://johannasah.github.io/to-do-list-app/">
+                            <img src="img/projects/project-2.jpg" alt="Image of the To-do list app">
+                          </a>
                         </div>
                         <p>
                           This app allows the user to create a to-do list. Items can be added, crossed out, rearranged and deleted. Built using HTML, CSS and jQuery.
@@ -847,7 +898,7 @@
                         </p>
                     </div>
                 </div>
-            </div>
+              </div>
         </section>
 
         <!-- Contact section -->

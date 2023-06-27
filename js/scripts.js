@@ -18,35 +18,15 @@ function showLanguage(language) {
     }
 }
 
-// expanding Projects when clicking on them, minimizing them, when clicked outside
-let expandedProject = null;
+// Expand project text
+const projects = document.querySelectorAll('.project-text');
 
-function expandProject(project) {
-  if (expandedProject) {
-    expandedProject.classList.remove('expanded');
-  }
+// Add click event listener to each project
+projects.forEach(project => {
+  const moreLink = project.querySelector('.more-link');
 
-  if (expandedProject !== project) {
-    project.classList.add('expanded');
-    expandedProject = project;
-  } else {
-    expandedProject = null;
-  }
-}
-
-document.addEventListener('click', function(event) {
-  const clickedElement = event.target;
-  const isClickedProject = clickedElement.closest('.project');
-
-  if (!isClickedProject && expandedProject) {
-    expandedProject.classList.remove('expanded');
-    expandedProject = null;
-  }
+  // Show/hide additional text on click
+  moreLink.addEventListener('click', () => {
+    project.classList.toggle('expanded');
+  });
 });
-
- 
-  
-  
-  
-  
-  
