@@ -18,15 +18,11 @@ function showLanguage(language) {
     }
 }
 
-// Expand project text
-const projects = document.querySelectorAll('.project-text');
+// Show hidden Paragraphs in About me
+const seenParagraphs = document.querySelectorAll('#skills .seen');
 
-// Add click event listener to each project
-projects.forEach(project => {
-  const moreLink = project.querySelector('.more-link');
-
-  // Show/hide additional text on click
-  moreLink.addEventListener('click', () => {
-    project.classList.toggle('expanded');
+seenParagraphs.forEach((paragraph) => {
+  paragraph.addEventListener('click', () => {
+    paragraph.nextElementSibling.classList.toggle('show');
   });
 });

@@ -196,6 +196,7 @@ nav .dropdown:hover .dropdown-content {
 p {
     text-align: center;
     font-size: medium;
+    line-height: 1.4;
 }
 
 .highlight {
@@ -285,19 +286,38 @@ section {
     font-size: 300%;
 }
 
-#skills table {
-    border-collapse: collapse;
-    width: 100%;
+#skills .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
 }
 
-#skills th, td {
+#skills .skills {
+    background-color: #f2f2f2;
+    padding: 20px;
     text-align: center;
+    border-radius: 5%;
+    border: 1px solid black;
+    max-width: 250px;
 }
 
-#skills th:nth-child(-n+3),
-#skills td:nth-child(-n+3) {
-  width: 33.33%;
-  padding: 5px;
+#skills .hidden {
+    display: none;
+    background-color: #fff;
+    border-radius: 5%;
+}
+
+#skills .seen {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#skills .seen:hover + .hidden {
+    display: block;
+}
+
+#skills .show {
+    display: block;
 }
 
 /* Projects section styles */
@@ -317,7 +337,7 @@ section {
     text-align: center;
     border-radius: 5%;
     border: 1px solid black;
-    transition: transform 0.3s;
+    scroll-margin-top: 150px;
 }
 
 #projects img {
@@ -329,7 +349,7 @@ section {
 }
 
 #projects h2 {
-    font-size: larger;
+    font-size: 200%;
 }
 
 /* Contact section styles */
