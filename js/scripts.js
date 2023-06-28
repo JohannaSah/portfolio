@@ -18,12 +18,30 @@ function showLanguage(language) {
     }
 };
 
-// Show/hide hidden elements in About me and Projects
+// Show/hide hidden elements in Skills
+const seenElements = document.querySelectorAll('#skills .seen');
+
+seenElements.forEach((element) => {
+  element.addEventListener('click', () => {
+    element.nextElementSibling.classList.toggle('show');
+  });
+});
+
+document.addEventListener('click', (event) => {
+    seenElements.forEach((element) => {
+      const hiddenElement = element.nextElementSibling;
+      if (!element.contains(event.target) && !hiddenElement.contains(event.target)) {
+        hiddenElement.classList.remove('show');
+      }
+    });
+});
+
+// Show/hide hidden elements in Projects
 const projectElements = document.querySelectorAll('.project');
 
 projectElements.forEach((project) => {
-  const seenElement = project.querySelector('.seen');
-  const hiddenElement = project.querySelector('.hidden');
+  const seenElement = project.querySelector('#projects .seen');
+  const hiddenElement = project.querySelector('#projects .hidden');
   const seeMoreIcon = seenElement.querySelector('.see-more-icon');
   
   seenElement.addEventListener('click', () => {
