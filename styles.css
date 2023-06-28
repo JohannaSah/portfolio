@@ -313,10 +313,6 @@ section {
     text-decoration: underline;
 }
 
-#skills .seen:hover + .hidden {
-    display: block;
-}
-
 #skills .show {
     display: block;
 }
