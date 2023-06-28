@@ -341,6 +341,18 @@ section {
     max-width: 100%;
 }
 
+#projects .image-container {
+    position: relative;
+    display: inline-block;
+} 
+
+#projects .see-more-icon {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 25px;
+}
+
 #projects .hidden {
     display: none;
     background-color: #fff;

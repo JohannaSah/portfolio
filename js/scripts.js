@@ -19,25 +19,26 @@ function showLanguage(language) {
 };
 
 // Show/hide hidden elements in About me and Projects
-const seenElements = document.querySelectorAll('.seen');
+const projectElements = document.querySelectorAll('.project');
 
-seenElements.forEach((element) => {
-  element.addEventListener('click', () => {
-    element.nextElementSibling.classList.toggle('show');
-
+projectElements.forEach((project) => {
+  const seenElement = project.querySelector('.seen');
+  const hiddenElement = project.querySelector('.hidden');
+  const seeMoreIcon = seenElement.querySelector('.see-more-icon');
+  
+  seenElement.addEventListener('click', () => {
+    hiddenElement.classList.toggle('show');
+    seeMoreIcon.style.display = hiddenElement.classList.contains('show') ? 'none' : 'block';
     
-    const hiddenElement = element.nextElementSibling;
     if (hiddenElement.classList.contains('show')) {
-        hiddenElement.scrollIntoView({ behavior: 'smooth' });
-      }
+      hiddenElement.scrollIntoView({ behavior: 'smooth' });
+    }
   });
-});
-
-document.addEventListener('click', (event) => {
-    seenElements.forEach((element) => {
-      const hiddenElement = element.nextElementSibling;
-      if (!element.contains(event.target) && !hiddenElement.contains(event.target)) {
-        hiddenElement.classList.remove('show');
-      }
-    });
+  
+  document.addEventListener('click', (event) => {
+    if (!project.contains(event.target)) {
+      hiddenElement.classList.remove('show');
+      seeMoreIcon.style.display = 'block';
+    }
+  });
 });
