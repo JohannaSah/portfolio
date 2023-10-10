@@ -1,3 +1,10 @@
+// small screen dropdown menu move to section
+function navigateToSection(targetSectionId) {
+  const targetSection = document.querySelector(targetSectionId);
+  if (targetSection) {
+      targetSection.scrollIntoView({ behavior: 'smooth' });
+  }
+}
 
 // Changing languages by clicking button
 function showLanguage(language) {
@@ -42,11 +49,9 @@ const projectElements = document.querySelectorAll('.project');
 projectElements.forEach((project) => {
   const seenElement = project.querySelector('#projects .seen');
   const hiddenElement = project.querySelector('#projects .hidden');
-  const seeMoreIcon = seenElement.querySelector('.see-more-icon');
   
   seenElement.addEventListener('click', () => {
     hiddenElement.classList.toggle('show');
-    seeMoreIcon.style.display = hiddenElement.classList.contains('show') ? 'none' : 'block';
     
     if (hiddenElement.classList.contains('show')) {
       hiddenElement.scrollIntoView({ behavior: 'smooth' });
@@ -56,7 +61,6 @@ projectElements.forEach((project) => {
   document.addEventListener('click', (event) => {
     if (!project.contains(event.target)) {
       hiddenElement.classList.remove('show');
-      seeMoreIcon.style.display = 'block';
     }
   });
 });

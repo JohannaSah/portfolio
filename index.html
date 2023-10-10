@@ -95,18 +95,16 @@
           <button class="nav-dropbtn"> <img src="img/icons/menu icon.png" alt="clickable menu icon"></button>
           <div class="nav-dropdown-content">
               <ul class="navbar-links">
-                  <li><button class="dropbtn"><a href="#home" >Home</a></button></li>
-                  <li><button class="dropbtn"><a href="#skills" >About me</a></button></li>
-                  <li><button class="dropbtn"><a href="#projects" >Projects</a></button></li>
-                  <li><button class="dropbtn"><a href="#contact" >Contact</a></button></li>
+                  <li><button class="dropbtn" onclick="navigateToSection('#home')">Home</button></li>
+                  <li><button class="dropbtn" onclick="navigateToSection('#skills')">About me</button></li>
+                  <li><button class="dropbtn" onclick="navigateToSection('#projects')">Projects</button></li>
+                  <li><button class="dropbtn" onclick="navigateToSection('#contact')">Contact</button></li>
                   <li>
                       <div class="dropdown-menu">
-                          <button class="dropbtn"><img src="img/icons/language icon.png" alt="clickable language icon"></button>
-                          <div class="dropdown-menu-content">
-                              <button class="dropbtn" onclick="showLanguage('eng')"> eng </button>
-                              <button class="dropbtn" onclick="showLanguage('ger')"> ger </button>
-                              <button class="dropbtn" onclick="showLanguage('swe')"> swe </button>
-                          </div>
+                          <p class="underline">Languages</p>
+                          <button class="dropbtn" onclick="showLanguage('eng')"> eng </button>
+                          <button class="dropbtn" onclick="showLanguage('ger')"> ger </button>
+                          <button class="dropbtn" onclick="showLanguage('swe')"> swe </button>                  
                       </div>
                   </li>
               </ul>
@@ -117,18 +115,16 @@
           <button class="nav-dropbtn"> <img src="img/icons/menu icon.png" alt="Klickbares Menu Bild"></button>
           <div class="nav-dropdown-content">
               <ul class="navbar-links" >
-                  <li><button class="dropbtn"><a href="#home" >Startseite</a></button></li>
-                  <li><button class="dropbtn"><a href="#skills" >Über mich</a></button></li>
-                  <li><button class="dropbtn"><a href="#projects" >Projekte</a></button></li>
-                  <li><button class="dropbtn"><a href="#contact" >Kontakt</a></button></li>
+                  <li><button class="dropbtn" onclick="navigateToSection('#home')">Startseite</button></li>
+                  <li><button class="dropbtn" onclick="navigateToSection('#skills')">Über mich</button></li>
+                  <li><button class="dropbtn" onclick="navigateToSection('#projects')">Projekte</button></li>
+                  <li><button class="dropbtn" onclick="navigateToSection('#contact')">Kontakt</button></li>
                   <li>
                       <div class="dropdown-menu">
-                          <button class="dropbtn"><img src="img/icons/language icon.png" alt="klickbares Sprachen Menu Bild"></button>
-                          <div class="dropdown-menu-content">
-                              <button class="dropbtn" onclick="showLanguage('eng')"> eng </button>
-                              <button class="dropbtn" onclick="showLanguage('ger')"> ger </button>
-                              <button class="dropbtn" onclick="showLanguage('swe')"> swe </button>
-                          </div>
+                          <p class="underline">Sprachen</p>
+                          <button class="dropbtn" onclick="showLanguage('eng')"> eng </button>
+                          <button class="dropbtn" onclick="showLanguage('ger')"> ger </button>
+                          <button class="dropbtn" onclick="showLanguage('swe')"> swe </button>                          
                       </div>
                   </li>
               </ul>
@@ -139,24 +135,22 @@
           <button class="nav-dropbtn"><img src="img/icons/menu icon.png" alt="klickbar meny bild"></button>
           <div class="nav-dropdown-content">
               <ul class="navbar-links">
-                  <li><button class="dropbtn"><a href="#home" >Hem</a></button></li>
-                  <li><button class="dropbtn"><a href="#skills" >Om mig</a></button></li>
-                  <li><button class="dropbtn"><a href="#projects" >Projekt</a></button></li>
-                  <li><button class="dropbtn"><a href="#contact" >Kontakt</a></button></li>
+                  <li><button class="dropbtn" onclick="navigateToSection('#home')">Hem</button></li>
+                  <li><button class="dropbtn" onclick="navigateToSection('#skills')">Om mig</button></li>
+                  <li><button class="dropbtn" onclick="navigateToSection('#projects')">Projekt</button></li>
+                  <li><button class="dropbtn" onclick="navigateToSection('#contact')">Kontakt</button></li>
                   <li>
                       <div class="dropdown-menu">
-                          <button class="dropbtn"><img src="img/icons/language icon.png" alt="klickbar språk meny bild"></button>
-                          <div class="dropdown-menu-content">
-                              <button class="dropbtn" onclick="showLanguage('eng')"> eng </button>
-                              <button class="dropbtn" onclick="showLanguage('ger')"> ger </button>
-                              <button class="dropbtn" onclick="showLanguage('swe')"> swe </button>
-                          </div>
+                          <p class="underline">Språk</p>
+                          <button class="dropbtn" onclick="showLanguage('eng')"> eng </button>
+                          <button class="dropbtn" onclick="showLanguage('ger')"> ger </button>
+                          <button class="dropbtn" onclick="showLanguage('swe')"> swe </button>
                       </div>
                   </li>
               </ul>
           </div>
         </div>
-    </nav>
+    </nav>  
 
     <!-- Main part -->
     <div class="main">
