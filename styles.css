@@ -137,6 +137,8 @@ nav .dropdown:hover .dropdown-content {
     display: none;
     position: absolute;
     top: 100%;
+    right: 0;
+    left: auto;
     background-color: #f9f9f9;
     min-width: 80px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -144,14 +146,16 @@ nav .dropdown:hover .dropdown-content {
 }
 
 .nav-dropdown:hover .nav-dropdown-content {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav-dropdown-content ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
     text-align: center;
+    margin-top: 10px;
 }
 
 .nav-dropdown-content li {
@@ -175,7 +179,6 @@ nav .dropdown:hover .dropdown-content {
 .dropdown-menu:hover .dropdown-menu-content {
     display: block;
 }
-
 
 /* Main styles general */
 .main {
@@ -341,13 +344,6 @@ section {
     position: relative;
     display: inline-block;
 } 
-
-#projects .see-more-icon {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    width: 25px;
-}
 
 #projects .hidden {
     display: none;
