@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to the website of Johanna Sahlberg, a full-stack web developer. Contact me for your web development needs.">
+    <meta name="keywords" content="Johanna Sahlberg, web development, full-stack web developer, web developer, web design, HTML, CSS, JavaScript">
+    <meta name="author" content="Johanna Sahlberg">
+    <meta name="robots" content="index, follow">
+    <title>Johanna Sahlberg Full-stack Web Developer Impressum</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- following link connects to a CDN (content delivery network) to nomralise css
+      forcing the browser to render all elements more consistently and inline with modern standards // -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous"
+    referrerpolicy="no-referrer">
+
+    <!-- following link embeds the chosen 2 fonts, it needs to be embeded ahead of the link to the css file // -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Palanquin:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- following link is for the favicon // -->
+  <link rel="icon" type="image/png" href="img/icons/favicon-32x32.png" sizes="32x32">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+        <a href="#home" id="logo-link">
+            <img src="img/icons/JS-wide.png" alt="clickable logo, that brings you back to home" id="logo" >
+        </a>
+        <div id="navbar">
+            <!-- English -->
+            <ul class="navbar-links language-choice eng">
+                <li><a href="index.html#home" >Home</a></li>
+                <li><a href="index.html#skills" >About me</a></li>
+                <li><a href="index.html#projects" >Projects</a></li>
+                <li><a href="index.html#contact" >Contact</a></li>
+                <li>
+                  <div class="dropdown">
+                    <button class="dropbtn language-btn">
+                      <img class="language-icon" src="img/icons/language icon.png" alt="clickable language menu icon">
+                    </button>
+                    <div class="dropdown-content">
+                        <button onclick="showLanguage('eng')"> ENG </button>
+                        <button onclick="showLanguage('ger')"> GER </button>
+                        <button onclick="showLanguage('swe')"> SWE </button>
+                    </div>
+                  </div>
+                </li>
+            </ul>
+            <!-- German -->
+            <ul class="navbar-links language-choice ger">
+                <li><a href="index.html#home" >Startseite</a></li>
+                <li><a href="index.html#skills" >Über mich</a></li>
+                <li><a href="index.html#projects" >Projekte</a></li>
+                <li><a href="index.html#contact" >Kontakt</a></li>
+                <li>
+                  <div class="dropdown">
+                      <button class="dropbtn">
+                        <img class="language-icon" src="img/icons/language icon.png" alt="klickbares Sprachen Menu Bild">
+                      </button>
+                      <div class="dropdown-content">
+                          <button onclick="showLanguage('eng')"> ENG </button>
+                          <button onclick="showLanguage('ger')"> GER </button>
+                          <button onclick="showLanguage('swe')"> SWE </button>
+                      </div>
+                  </div>
+                </li>            
+            </ul>
+            <!-- Swedish -->
+            <ul class="navbar-links language-choice swe active">
+                <li><a href="index.html#home" >Hem</a></li>
+                <li><a href="index.html#skills" >Om mig</a></li>
+                <li><a href="index.html#projects" >Projekt</a></li>
+                <li><a href="index.html#contact" >Kontakt</a></li>
+                <li>
+                  <div class="dropdown">
+                      <button class="dropbtn">
+                        <img class="language-icon" src="img/icons/language icon.png" alt="klickbar språk meny bild">
+                      </button>
+                      <div class="dropdown-content">
+                          <button onclick="showLanguage('eng')"> ENG </button>
+                          <button onclick="showLanguage('ger')"> GER </button>
+                          <button onclick="showLanguage('swe')"> SWE </button>
+                      </div>
+                  </div>
+                </li>            
+            </ul>
+        </div>
+        
+        <!-- small screen dropdown menu -->
+        <!-- English -->
+        <div class="nav-dropdown language-choice eng">
+          <button class="nav-dropbtn"> <img src="img/icons/menu icon.png" alt="clickable menu icon"></button>
+          <div class="nav-dropdown-content">
+              <ul class="navbar-links">
+                  <li><a href="index.html#home" >Home</a></li>
+                  <li><a href="index.html#skills" >About me</a></li>
+                  <li><a href="index.html#projects" >Projects</a></li>
+                  <li><a href="index.html#contact" >Contact</a></li>
+                  <li>
+                      <div class="dropdown-menu">
+                          <button class="dropbtn"><img src="img/icons/language icon.png" alt="clickable language icon"></button>
+                          <div class="dropdown-menu-content">
+                              <button class="dropbtn" onclick="showLanguage('eng')"> eng </button>
+                              <button class="dropbtn" onclick="showLanguage('ger')"> ger </button>
+                              <button class="dropbtn" onclick="showLanguage('swe')"> swe </button>
+                          </div>
+                      </div>
+                  </li>
+              </ul>
+          </div>
+        </div>
+        <!-- German -->
+        <div class="nav-dropdown language-choice ger">
+          <button class="nav-dropbtn"> <img src="img/icons/menu icon.png" alt="Klickbares Menu Bild"></button>
+          <div class="nav-dropdown-content">
+              <ul class="navbar-links" >
+                  <li><a href="index.html#home" >Startseite</a></li>
+                  <li><a href="index.html#skills" >Über mich</a></li>
+                  <li><a href="index.html#projects" >Projekte</a></li>
+                  <li><a href="index.html#contact" >Kontakt</a></li>
+                  <li>
+                      <div class="dropdown-menu">
+                          <button class="dropbtn"><img src="img/icons/language icon.png" alt="klickbares Sprachen Menu Bild"></button>
+                          <div class="dropdown-menu-content">
+                              <button class="dropbtn" onclick="showLanguage('eng')"> eng </button>
+                              <button class="dropbtn" onclick="showLanguage('ger')"> ger </button>
+                              <button class="dropbtn" onclick="showLanguage('swe')"> swe </button>
+                          </div>
+                      </div>
+                  </li>
+              </ul>
+          </div>
+        </div>
+        <!-- Swedish -->
+        <div class="nav-dropdown language-choice swe active">
+          <button class="nav-dropbtn"><img src="img/icons/menu icon.png" alt="klickbar meny bild"></button>
+          <div class="nav-dropdown-content">
+              <ul class="navbar-links">
+                  <li><a href="index.html#home" >Hem</a></li>
+                  <li><a href="index.html#skills" >Om mig</a></li>
+                  <li><a href="index.html#projects" >Projekt</a></li>
+                  <li><a href="index.html#contact" >Kontakt</a></li>
+                  <li>
+                      <div class="dropdown-menu">
+                          <button class="dropbtn"><img src="img/icons/language icon.png" alt="klickbar språk meny bild"></button>
+                          <div class="dropdown-menu-content">
+                              <button class="dropbtn" onclick="showLanguage('eng')"> eng </button>
+                              <button class="dropbtn" onclick="showLanguage('ger')"> ger </button>
+                              <button class="dropbtn" onclick="showLanguage('swe')"> swe </button>
+                          </div>
+                      </div>
+                  </li>
+              </ul>
+          </div>
+        </div>
+    </nav>
+
+    <!-- Main part -->
+    <div class="main">
+        <h1 class="impressum">Impressum</h1>
+        
+        <div class="impressum language-choice eng">
+            <h2 class="underline">Contact</h2>
+            <p>
+                Johanna Sahlberg <br> <br>
+                <a href="mailto:web-development@johanna-sahlberg.com?subject=Contact_via_website" class="links contact-section__link">
+                    Contact me 
+                </a>
+                <br> <br>
+                or send me an email via 
+                <br>
+                <span class="underline">
+                  web-development(at)johanna-sahlberg.com
+                </span> <br>
+            </p>  
+            <h2 class="underline">Disclaimer</h2>
+            <p>
+                Liability for Content: <br>
+                The content of my portfolio website has been created with the utmost care. <br>
+                However, no guarantee can be provided for the accuracy, completeness, and currency of the content.
+            </p>
+        </div>
+
+        <div class="impressum language-choice ger">
+            <h2 class="underline">Kontaktdaten</h2>
+            <p>
+                Johanna Sahlberg <br> <br> 
+                <a href="mailto:web-development@johanna-sahlberg.com?subject=Contact_via_website" class="links contact-section__link">
+                    Nehmt gern mit mir Kontakt auf 
+                </a>
+                <br> <br>
+                oder schickt mir eine Email via  
+                <br>
+                <span class="underline">
+                web-development(at)johanna-sahlberg.com
+                </span> <br>
+            </p>
+            
+            <h2 class="underline">Haftungsausschluss</h2>
+            <p>
+                Haftung für Inhalte: <br>
+                Die Inhalte meiner Portfolio-Website wurden mit größter Sorgfalt erstellt. <br>
+                Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte kann jedoch keine Gewähr übernommen werden.
+            </p>
+        </div>
+
+        <div class="language-choice swe active">
+            <h2 class="underline">Kontakt</h2>
+            <p>
+                Johanna Sahlberg <br> <br> 
+                <a href="mailto:web-development@johanna-sahlberg.com?subject=Contact_via_website"  class="links contact-section__link">
+                    Kontakta mig  
+                </a>
+                <br> <br>
+                eller skicka ett email via 
+                <br>
+                <span class="underline">
+                  web-development(at)johanna-sahlberg.com
+                </span> <br>
+            </p>
+            <h2 class="underline">Ansvarsfriskrivning</h2>
+            <p>
+                Ansvar för innehåll: <br>
+                Innehållet på min portföljwebbplats har skapats med största omsorg. <br>
+                Dock kan ingen garanti ges för innehållets noggrannhet, fullständighet och aktualitet.
+            </p>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <h2 class="language-choice eng"> Find me on: </h2>
+        <h2 class="language-choice ger"> Ihr findet mich auch auf: </h2>
+        <h2 class="language-choice swe active"> Hitta mig på: </h2>
+        <div class="icon-container">
+            <a href="https://github.com/JohannaSah" target="_blank">
+                <img src="img/icons/icon_github.svg" alt="Github icon" class="icon-image" id="github-icon">
+            </a>
+            <a href="https://www.linkedin.com/in/johanna-sahlberg/" target="_blank">
+                <img src="img/icons/icon_linkedin.svg" alt="LinkedIn icon" class="icon-image" id="linkedin-icon">
+            </a>
+        </div>
+        <a class="language-choice eng" href="impressum-eng.html">Impressum</a>
+        <a class="language-choice ger" href="impressum-ger.html">Impressum</a>
+        <a class="language-choice swe active" href="impressum-swe.html">Impressum</a>
+        <p>&copy; 2023 Johanna Sahlberg's Website. All rights reserved.</p>
+    </div>
+
+    <script src="js/scripts.js"></script>
+    
+    <!--
+      The following is a plugin for tota11y, which tests whether the web page is screen reader friendly
+      ###
+      - once the final product is screen reader friendly, remove the plugin
+      ### //
+    -->
+    <script src="js/tota11y.min.js"></script>
+
+</body>
+
+</html>
